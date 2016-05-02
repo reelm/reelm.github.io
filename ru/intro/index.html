@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<html lang="ru" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Вводный пример | Начало работы</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../api/index.html" />
+    
+    
+    <link rel="prev" href="../index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="1" data-chapter-title="Вводный пример" data-filepath="intro/README.md" data-basepath=".." data-revision="Mon May 02 2016 20:58:08 GMT+0500 (RTZ 4 (зима))">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Введение
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1" data-path="intro/index.html">
+            
+                
+                    <a href="../intro/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Вводный пример
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="basics/index.html">
+            
+            <span><b>2.</b> Основные концепции</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="patterns/index.html">
+            
+            <span><b>3.</b> Паттерны</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="api/index.html">
+            
+                
+                    <a href="../api/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Справочник API
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Опубликовано с помощью GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Начало работы</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x432;&#x432;&#x43E;&#x434;&#x43D;&#x44B;&#x439;-&#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;">&#x412;&#x432;&#x43E;&#x434;&#x43D;&#x44B;&#x439; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;</h2>
+<ul>
+<li><a href="#&#x43F;&#x440;&#x435;&#x434;&#x438;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;"><code>&#x41F;&#x440;&#x435;&#x434;&#x438;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;</code></a></li>
+<li><a href="#&#x43F;&#x43E;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43A;&#x438;-&#x437;&#x430;&#x434;&#x430;&#x447;&#x438;-&#x438;-&#x43F;&#x440;&#x43E;&#x441;&#x442;&#x435;&#x439;&#x448;&#x430;&#x44F;-&#x440;&#x435;&#x430;&#x43B;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44F;"><code>&#x41F;&#x43E;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43A;&#x438; &#x437;&#x430;&#x434;&#x430;&#x447;&#x438; &#x438; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x435;&#x439;&#x448;&#x430;&#x44F; &#x440;&#x435;&#x430;&#x43B;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44F;</code></a></li>
+<li><a href="#&#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F;"><code>&#x41A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F;</code></a></li>
+<li><a href="#&#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F;-&#x432;-&#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x435;-reelm"><code>&#x41A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F; &#x432; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x435; Reelm</code></a></li>
+<li><a href="#&#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F;-&#x441;-&#x441;&#x430;&#x439;&#x434;-&#x44D;&#x444;&#x444;&#x435;&#x43A;&#x442;&#x430;&#x43C;&#x438;-&#x432;-&#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x435;-reelm"><code>&#x41A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F; &#x441; &#x441;&#x430;&#x439;&#x434; &#x44D;&#x444;&#x444;&#x435;&#x43A;&#x442;&#x430;&#x43C;&#x438; &#x432; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x435; Reelm</code></a></li>
+</ul>
+<h4 id="&#x43F;&#x440;&#x435;&#x434;&#x438;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;">&#x41F;&#x440;&#x435;&#x434;&#x438;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x435;</h4>
+<p>&#x412; &#x44D;&#x442;&#x43E;&#x43C; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;&#x435; &#x43C;&#x44B; &#x440;&#x430;&#x441;&#x441;&#x43C;&#x43E;&#x442;&#x440;&#x438;&#x43C; &#x43A;&#x430;&#x43A;&#x438;&#x435; &#x43D;&#x43E;&#x432;&#x448;&#x435;&#x441;&#x442;&#x432;&#x430; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x442; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x430; <a href="https://github.com/tihonove/reelm" target="_blank">Reelm</a> &#x432; &#x440;&#x430;&#x437;&#x440;&#x430;&#x431;&#x43E;&#x442;&#x43A;&#x443; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x439; &#x43D;&#x430; &#x441;&#x442;&#x435;&#x43A;&#x435; react+redux.</p>
+<p>&#x414;&#x430;&#x43D;&#x43D;&#x44B;&#x439; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440; &#x43F;&#x43E;&#x434;&#x440;&#x430;&#x437;&#x443;&#x43C;&#x435;&#x432;&#x430;&#x435;&#x442;, &#x447;&#x442;&#x43E; &#x432;&#x44B; &#x445;&#x43E;&#x440;&#x43E;&#x448;&#x43E; &#x437;&#x43D;&#x430;&#x43A;&#x43E;&#x43C;&#x44B; &#x441;&#x43E; &#x441;&#x43B;&#x435;&#x434;&#x443;&#x44E;&#x449;&#x438;&#x43C;&#x438; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x430;&#x43C;&#x438;:</p>
+<ol>
+<li><a href="https://facebook.github.io/react/docs/getting-started.html" target="_blank">React</a></li>
+<li><a href="http://redux.js.org/index.html" target="_blank">Redux</a></li>
+</ol>
+<p>&#x41F;&#x440;&#x438;&#x43C;&#x435;&#x440; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x442; &#x441;&#x43E;&#x431;&#x43E;&#x439; &#x44D;&#x432;&#x43E;&#x43B;&#x44E;&#x446;&#x438;&#x44E; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E;&#x433;&#x43E; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F;, &#x43A;&#x430;&#x436;&#x434;&#x44B;&#x439; &#x448;&#x430;&#x433; &#x432; &#x434;&#x430;&#x43D;&#x43D;&#x43E;&#x43C; &#x440;&#x443;&#x43A;&#x43E;&#x432;&#x43E;&#x434;&#x441;&#x442;&#x432;&#x435; &#x441;&#x43E;&#x43E;&#x442;&#x432;&#x435;&#x442;&#x441;&#x442;&#x432;&#x443;&#x435;&#x442; &#x43A;&#x43E;&#x43C;&#x438;&#x442;&#x443; &#x432; <a href="https://github.com/tihonove/reelm-data-editor-example" target="_blank">&#x440;&#x435;&#x43F;&#x43E;&#x437;&#x438;&#x442;&#x43E;&#x440;&#x438;&#x438;</a>, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x439; &#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x441;&#x43A;&#x43B;&#x43E;&#x43D;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C; &#x438; &#x447;&#x438;&#x442;&#x430;&#x442;&#x44C; &#x440;&#x443;&#x43A;&#x43E;&#x432;&#x43E;&#x434;&#x441;&#x442;&#x432;&#x43E; &#x43F;&#x440;&#x43E;&#x434;&#x432;&#x438;&#x433;&#x430;&#x44F;&#x441;&#x44C; &#x432;&#x43C;&#x435;&#x441;&#x442;&#x435; &#x441; &#x430;&#x432;&#x442;&#x43E;&#x440;&#x43E;&#x43C; &#x441; &#x441;&#x430;&#x43C;&#x43E;&#x433;&#x43E; &#x43F;&#x435;&#x440;&#x432;&#x43E;&#x433;&#x43E; &#x43A;&#x43E;&#x43C;&#x438;&#x442;&#x430;. </p>
+<h4 id="&#x43F;&#x43E;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43A;&#x438;-&#x437;&#x430;&#x434;&#x430;&#x447;&#x438;-&#x438;-&#x43F;&#x440;&#x43E;&#x441;&#x442;&#x435;&#x439;&#x448;&#x430;&#x44F;-&#x440;&#x435;&#x430;&#x43B;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44F;">&#x41F;&#x43E;&#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x43A;&#x438; &#x437;&#x430;&#x434;&#x430;&#x447;&#x438; &#x438; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x435;&#x439;&#x448;&#x430;&#x44F; &#x440;&#x435;&#x430;&#x43B;&#x438;&#x437;&#x430;&#x446;&#x438;&#x44F;</h4>
+<p>&#x41F;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x438;&#x43C; &#x437;&#x430;&#x434;&#x430;&#x447;&#x443;: &#x441;&#x43E;&#x437;&#x434;&#x430;&#x442;&#x44C; &#x444;&#x43E;&#x440;&#x43C;&#x443; &#x440;&#x435;&#x434;&#x430;&#x43A;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x44F; Person. &#x41F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x435; &#x431;&#x443;&#x434;&#x435;&#x442; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x44F;&#x442;&#x44C; &#x441;&#x43E;&#x431;&#x43E;&#x439; &#x444;&#x43E;&#x440;&#x43C;&#x443; &#x441; &#x43F;&#x43E;&#x43B;&#x44F;&#x43C;&#x438; &#x432;&#x432;&#x43E;&#x434;&#x430; &#x438;&#x43C;&#x435;&#x43D;&#x438; &#x438; &#x444;&#x430;&#x43C;&#x438;&#x43B;&#x438;&#x438; &#x438; &#x43A;&#x43D;&#x43E;&#x43F;&#x43A;&#x43E;&#x439; &apos;Clear&apos;.</p>
+<p>&#x41D;&#x430;&#x447;&#x43D;&#x451;&#x43C; &#x441; &#x43D;&#x430;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x438;&#x44F; reducer&apos;&#x430; &#x434;&#x43B;&#x44F; &#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x445; Person.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> Change = <span class="hljs-string">&apos;Change&apos;</span>;
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> Clear = <span class="hljs-string">&apos;Clear&apos;</span>;
+
+<span class="hljs-keyword">const</span> initialState = {};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">personReducer</span>(<span class="hljs-params">person = initialState, action</span>) </span>{
+    <span class="hljs-keyword">if</span> (!action)
+        <span class="hljs-keyword">return</span> person;
+    <span class="hljs-keyword">if</span> (action.type === Change) {
+        person = { ...person, ...action.data };
+    }
+    <span class="hljs-keyword">if</span> (action.type === Clear) {
+        person = initialState
+    }
+    <span class="hljs-keyword">return</span> person;
+}
+</code></pre>
+<p>&#x422;&#x435;&#x43F;&#x435;&#x440;&#x44C; &#x441;&#x43E;&#x437;&#x434;&#x430;&#x434;&#x438;&#x43C; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x435; &#x444;&#x43E;&#x440;&#x43C;&#x44B;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x435; &#x431;&#x443;&#x434;&#x435;&#x442; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x442;&#x44C; &#x441; &#x44D;&#x442;&#x438;&#x43C;&#x438; &#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x43C;&#x438;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">PersonEditForm</span>(<span class="hljs-params">{ person, onChange, onClear }</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+                First name:
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> 
+                    <span class="hljs-attribute">value</span>=<span class="hljs-value">{person.fitstName</span> || &apos;&apos;} 
+                    <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{e</span> =&gt;</span> onChange({ fitstName: e.target.value })} /&gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+                Last name:
+                <span class="hljs-tag">&lt;<span class="hljs-title">input</span> 
+                    <span class="hljs-attribute">value</span>=<span class="hljs-value">{person.lastName</span> || &apos;&apos;} 
+                    <span class="hljs-attribute">onChange</span>=<span class="hljs-value">{e</span> =&gt;</span> onChange({ lastName: e.target.value })} /&gt;
+            <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">onClick</span>=<span class="hljs-value">{onClear}</span>&gt;</span>Clear<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+}
+</span></code></pre>
+<p>&#x427;&#x442;&#x43E;&#x431;&#x44B; &#x43D;&#x435; &#x440;&#x430;&#x437;&#x43C;&#x435;&#x449;&#x430;&#x442;&#x44C; &#x44D;&#x442;&#x443; &#x444;&#x43E;&#x440;&#x43C;&#x443; &#x432; &#x43A;&#x43E;&#x440;&#x43D;&#x435; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F;, &#x441;&#x43E;&#x437;&#x434;&#x430;&#x434;&#x438;&#x43C; &#x43D;&#x435;&#x43A;&#x43E;&#x435; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x435;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x435; &#x431;&#x443;&#x434;&#x435;&#x442; &#x432;&#x43C;&#x435;&#x449;&#x430;&#x442;&#x44C; &#x444;&#x43E;&#x440;&#x43C;&#x443; &#x438; &#x43F;&#x43E;&#x434;&#x43A;&#x43B;&#x44E;&#x447;&#x438;&#x43C; &#x435;&#x433;&#x43E; &#x43A; store:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> PersonEditForm <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../components/PersonEditForm&apos;</span>
+<span class="hljs-keyword">import</span> { Change <span class="hljs-keyword">as</span> PersonChange } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../reducers/personReducer&apos;</span>
+<span class="hljs-keyword">import</span> { Clear <span class="hljs-keyword">as</span> PersonClear } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../reducers/personReducer&apos;</span>
+
+function SinglePersonEditApplication({ person, onPersonChange, onPersonClear }) {
+    return &lt;div&gt;
+            &lt;PersonEditForm 
+                person={person}
+                onChange={onPersonChange}
+                onClear={onPersonClear}
+                 /&gt;
+        &lt;/div&gt;
+}
+
+export default connect(
+    state =&gt; ({ person: state }),
+    dispatch =&gt; ({
+        onPersonChange: data =&gt; dispatch({ type: PersonChange, data: data }),
+        onPersonClear: () =&gt; dispatch({ type: PersonClear })
+    }))(SinglePersonEditApplication)
+</code></pre>
+<p>&#x438; &#x437;&#x430;&#x43F;&#x443;&#x441;&#x442;&#x438;&#x43C; &#x43D;&#x430;&#x448;&#x435; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x435;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> SinlgePersonEditApplication <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./containers/SinlgePersonEditApplication&apos;</span>
+<span class="hljs-keyword">import</span> personReducer <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./reducers/personReducer&apos;</span>
+
+var store = createStore(personReducer, applyMiddleware(createLogger()));
+
+ReactDom.render(
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">Provider</span> <span class="hljs-attribute">store</span>=<span class="hljs-value">{store}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">SinlgePersonEditApplication</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">Provider</span>&gt;</span>,
+    document.getElementById(&apos;content&apos;));
+</span></code></pre>
+<p>&#x422;&#x435;&#x43F;&#x435;&#x440;&#x44C; &#x441;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x435; &#x43D;&#x430;&#x448;&#x435;&#x433;&#x43E; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F; &#x440;&#x430;&#x432;&#x43D;&#x43E; &#x441;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x44E; &#x43E;&#x434;&#x43D;&#x43E;&#x433;&#x43E; &#x44D;&#x43A;&#x437;&#x435;&#x43C;&#x43F;&#x43B;&#x44F;&#x440;&#x430; person, &#x438; &#x432;&#x43D;&#x443;&#x442;&#x440;&#x438; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F; &#x433;&#x435;&#x43D;&#x435;&#x440;&#x438;&#x440;&#x443;&#x44E;&#x442;&#x441;&#x44F; &#x438; &#x43E;&#x431;&#x440;&#x430;&#x431;&#x430;&#x442;&#x44B;&#x432;&#x430;&#x44E;&#x442; action&apos;&#x44B; &#x432;&#x43B;&#x438;&#x44F;&#x44E;&#x449;&#x438;&#x435; &#x43D;&#x430; &#x44D;&#x442;&#x43E;&#x442; &#x44D;&#x43A;&#x437;&#x435;&#x43C;&#x43F;&#x43B;&#x44F;&#x440;. &#x42D;&#x442;&#x43E; &#x43D;&#x435; &#x441;&#x43E;&#x432;&#x441;&#x435;&#x43C; &#x443;&#x434;&#x43E;&#x431;&#x43D;&#x43E;, &#x442;.&#x43A;. &#x432;&#x43D;&#x443;&#x442;&#x440;&#x438; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F; &#x43C;&#x43E;&#x433;&#x443;&#x442; &#x436;&#x438;&#x442;&#x44C; &#x434;&#x440;&#x443;&#x433;&#x438;&#x435; &#x441;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x44F;, &#x433;&#x435;&#x43D;&#x435;&#x440;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x442;&#x44C;&#x441;&#x44F; &#x434;&#x440;&#x443;&#x433;&#x438;&#x435; &#x43F;&#x43E; &#x441;&#x43C;&#x44B;&#x441;&#x43B;&#x443; action&apos;&#x44B; &#x441; &#x442;&#x430;&#x43A;&#x438;&#x43C;&#x438; &#x436;&#x435; &#x438;&#x43C;&#x435;&#x43D;&#x430;&#x43C;&#x438;. &#x415;&#x441;&#x442;&#x44C; &#x43D;&#x435;&#x441;&#x43A;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x43F;&#x443;&#x442;&#x435;&#x439; &#x440;&#x435;&#x448;&#x435;&#x43D;&#x438;&#x44F; &#x442;&#x430;&#x43A;&#x43E;&#x439; &#x43F;&#x440;&#x43E;&#x431;&#x43B;&#x435;&#x43C;&#x44B;. &#x420;&#x430;&#x441;&#x441;&#x43C;&#x43E;&#x442;&#x440;&#x438;&#x43C; &#x43E;&#x434;&#x438;&#x43D; &#x438;&#x437; &#x43D;&#x438;&#x445;.</p>
+<h4 id="&#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F;">&#x41A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F;</h4>
+<p>&#x41A;&#x430;&#x436;&#x435;&#x442;&#x441;&#x44F;, &#x447;&#x442;&#x43E; &#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x432;&#x441;&#x435; action&apos;&#x44B; &#x438;&#x437; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x44F; PersonEditForm &#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x43D;&#x430;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x44C; &#x432; personReducer, &#x430; &#x441;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x435; &#x43D;&#x430;&#x434; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x43C; &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x435;&#x442; &#x44D;&#x442;&#x43E;&#x442; reducer, &#x445;&#x440;&#x430;&#x43D;&#x438;&#x442;&#x44C; &#x432; &#x43A;&#x430;&#x43A;&#x43E;&#x43C;-&#x442;&#x43E; &#x443;&#x437;&#x43B;&#x435; &#x441;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x44F; &#x432;&#x441;&#x435;&#x433;&#x43E; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F;. &#x41E;&#x434;&#x438;&#x43D; &#x438;&#x437; &#x441;&#x43F;&#x43E;&#x441;&#x43E;&#x431;&#x43E;&#x432; &#x434;&#x43E;&#x441;&#x442;&#x438;&#x433;&#x43D;&#x443;&#x442;&#x44C; &#x442;&#x430;&#x43A;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x44F; &#x442;&#x430;&#x43A;&#x43E;&#x432;: &#x432;&#x441;&#x435;&#x43C; action&apos;&#x430;&#x43C; &#x433;&#x435;&#x43D;&#x435;&#x440;&#x438;&#x440;&#x443;&#x435;&#x43C;&#x44B;&#x43C; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x435;&#x43C; PersonEditForm &#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x44C; &#x43D;&#x435;&#x43A;&#x438;&#x439; &#x43F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441;, &#x430; &#x432; reducer&apos;&#x435; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F; &#x43F;&#x43E;&#x439;&#x43C;&#x430;&#x442;&#x44C; &#x432;&#x441;&#x435; &#x442;&#x430;&#x43A;&#x438;&#x435; action&apos;&#x44B; &#x438;, &#x43E;&#x442;&#x43A;&#x443;&#x441;&#x438;&#x432; &#x43E;&#x442; &#x43D;&#x438;&#x445; &#x43F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441;, &#x43E;&#x442;&#x43F;&#x440;&#x430;&#x432;&#x438;&#x442;&#x44C; &#x432; personReducer. &#x414;&#x430;&#x432;&#x430;&#x439;&#x442;&#x435; &#x43F;&#x43E;&#x43F;&#x440;&#x43E;&#x431;&#x443;&#x435;&#x43C; &#x44D;&#x442;&#x43E; &#x441;&#x434;&#x435;&#x43B;&#x430;&#x442;&#x44C;:</p>
+<pre><code class="lang-javascript">import personReducer from &apos;./personReducer&apos;
+
+// &#x41F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441; &#x434;&#x43B;&#x44F; action&apos;&#x43E;&#x432;
+export const Person = &apos;Person&apos;;
+
+const initialState = {
+    person: personReducer()
+};
+
+// &#x420;&#x435;&#x433;&#x443;&#x43B;&#x44F;&#x440;&#x43D;&#x43E; &#x432;&#x44B;&#x440;&#x430;&#x436;&#x435;&#x43D;&#x438;&#x435; &#x434;&#x43B;&#x44F; &#x432;&#x44B;&#x434;&#x435;&#x43B;&#x435;&#x43D;&#x438;&#x44F; action&apos;&#x43E;&#x432;
+const personPrefixRegex = new RegExp(`^${Person}\.(.*)`);
+
+export default function singlePersonEditReducer(appState = initialState, action) {
+    if (!action) 
+        return appState;
+
+    // &#x41F;&#x440;&#x43E;&#x432;&#x435;&#x440;&#x44F;&#x435;&#x43C; &#x43D;&#x430; &#x441;&#x43E;&#x43E;&#x442;&#x432;&#x435;&#x442;&#x441;&#x442;&#x432;&#x438;&#x435; &#x43F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441;&#x443;
+    if (personPrefixRegex.test(action.type)) {
+
+        // &#x431;&#x435;&#x440;&#x451;&#x43C; &#x432;&#x441;&#x451;, &#x447;&#x442;&#x43E; &#x43D;&#x430;&#x445;&#x43E;&#x434;&#x438;&#x442;&#x441;&#x44F; &#x43F;&#x43E;&#x441;&#x43B;&#x435; &#x43F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441;&#x430;
+        var newType = action.type.match(personPrefixRegex).splice(-1)[0];
+
+        // &#x421;&#x442;&#x440;&#x43E;&#x438;&#x43C; &#x43D;&#x43E;&#x432;&#x44B;&#x435; action&apos;s &#x441; &#x442;&#x438;&#x43F;&#x43E;&#x43C; &#x431;&#x435;&#x445; &#x43F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441;&#x430;
+        var newAction = { ...action, type: newType };
+
+        appState = { 
+            ...appState, 
+            person: personReducer(appState.person, newAction) 
+        };
+    }
+    return appState;
+}
+</code></pre>
+<p>&#x412; &#x442;&#x43E;&#x447;&#x43A;&#x435; &#x43F;&#x43E;&#x434;&#x43A;&#x43B;&#x44E;&#x447;&#x435;&#x43D;&#x438;&#x44F; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F; &#x43A; store &#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x43C; &#x43A; &#x442;&#x438;&#x43F;&#x430;&#x43C; action&apos;&#x43E;&#x432; &#x43F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441;.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(
+    state =&gt; ({ person: state.person }),
+    dispatch =&gt; ({
+        onPersonChange: (data) =&gt; dispatch({ type: <span class="hljs-string">`<span class="hljs-subst">${Person}</span>.<span class="hljs-subst">${PersonChange}</span>`</span>, data: data }),
+        onPersonClear: () =&gt; dispatch({ type: <span class="hljs-string">`<span class="hljs-subst">${Person}</span>.<span class="hljs-subst">${PersonClear}</span>`</span> })
+    }))(SinglePersonEditApplication)
+</code></pre>
+<h4 id="&#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F;-&#x432;-&#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x435;-reelm">&#x41A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F; &#x432; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x435; Reelm</h4>
+<p>&#x41E;&#x434;&#x43D;&#x430;&#x43A;&#x43E; &#x442;&#x430;&#x43A;&#x43E;&#x439; &#x441;&#x43F;&#x43E;&#x441;&#x43E;&#x431; &#x43D;&#x435;&#x441;&#x43A;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x43C;&#x43D;&#x43E;&#x433;&#x43E;&#x441;&#x43B;&#x43E;&#x432;&#x435;&#x43D;. &#x41C;&#x43E;&#x436;&#x43D;&#x43E; &#x43F;&#x43E;&#x43F;&#x440;&#x43E;&#x431;&#x43E;&#x432;&#x430;&#x442;&#x44C; &#x443;&#x43F;&#x440;&#x43E;&#x441;&#x442;&#x438;&#x442;&#x44C; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x435;&#x43D;&#x43D;&#x443;&#x44E; &#x43F;&#x440;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;&#x443;.
+&#x41F;&#x43E;&#x434;&#x43A;&#x43B;&#x44E;&#x447;&#x438;&#x43C; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x443; Reelm:</p>
+<pre><code>npm install reelm --save
+</code></pre><p>&#x41D;&#x430;&#x447;&#x43D;&#x451;&#x43C; &#x441; personReducer&apos;&#x430; &#x438; &#x43F;&#x435;&#x440;&#x435;&#x43F;&#x438;&#x448;&#x435;&#x43C; &#x435;&#x433;&#x43E; &#x43F;&#x440;&#x438; &#x43F;&#x43E;&#x43C;&#x43E;&#x449;&#x438; &#x43A;&#x43E;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x438; defineReducer:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { defineReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;reelm/fluent&apos;</span>
+
+//...
+
+export default defineReducer(initialState)
+    .on(Change, (person, { data }) =&gt; ({ ...person, ...data }))
+    .on(Clear, () =&gt; initialState);
+</code></pre>
+<p>&#x41A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F; reducer&apos;&#x43E;&#x432; &#x432; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x435; Reelm &#x43C;&#x43E;&#x436;&#x435;&#x442; &#x431;&#x44B;&#x442;&#x44C; &#x43E;&#x441;&#x443;&#x449;&#x435;&#x441;&#x442;&#x432;&#x43B;&#x435;&#x43D;&#x430; &#x43F;&#x440;&#x438; &#x43F;&#x43E;&#x43C;&#x43E;&#x449;&#x438; &#x43A;&#x43E;&#x43D;&#x441;&#x442;&#x440;&#x443;&#x43A;&#x446;&#x438;&#x438; scopedOver:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> { defineReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;reelm/fluent&apos;</span>
+
+<span class="hljs-keyword">import</span> personReducer <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./personReducer&apos;</span>
+
+export const Person = <span class="hljs-string">&apos;Person&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineReducer({})
+    .scopedOver(Person, [<span class="hljs-string">&apos;person&apos;</span>], personReducer);
+</code></pre>
+<p>&#x41F;&#x435;&#x440;&#x432;&#x44B;&#x439; &#x43F;&#x430;&#x440;&#x430;&#x43C;&#x435;&#x442;&#x440;, &#x43F;&#x440;&#x438;&#x43D;&#x438;&#x43C;&#x430;&#x435;&#x43C;&#x44B;&#x439; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x435;&#x439; scopedOver, -- &#x44D;&#x442;&#x43E; &#x43F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441; action&apos;&#x43E;&#x432;, &#x432;&#x442;&#x43E;&#x440;&#x43E;&#x439; -- &#x43F;&#x443;&#x442;&#x44C; &#x434;&#x43E; &#x443;&#x437;&#x43B;&#x430; &#x432; &#x441;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x438; &#x43D;&#x430; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x43C; &#x431;&#x443;&#x434;&#x435;&#x442; &#x432;&#x44B;&#x43F;&#x43E;&#x43B;&#x43D;&#x435;&#x43D; reducer, &#x43F;&#x435;&#x440;&#x435;&#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x439; &#x442;&#x440;&#x435;&#x442;&#x44C;&#x438;&#x43C; &#x43F;&#x430;&#x440;&#x430;&#x43C;&#x435;&#x442;&#x440;&#x43E;&#x43C;.</p>
+<p>&#x422;&#x435;&#x43F;&#x435;&#x440;&#x44C; &#x443;&#x43F;&#x440;&#x43E;&#x441;&#x442;&#x438;&#x43C; &#x43A;&#x43E;&#x434; &#x432; &#x442;&#x43E;&#x447;&#x43A;&#x435; &#x43F;&#x43E;&#x434;&#x43A;&#x43B;&#x44E;&#x447;&#x435;&#x43D;&#x438;&#x44F; &#x43F;&#x440;&#x435;&#x434;&#x441;&#x442;&#x430;&#x432;&#x43B;&#x435;&#x43D;&#x438;&#x44F; &#x43A; store. &#x41D;&#x430; &#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x439; &#x43C;&#x43E;&#x43C;&#x435;&#x43D;&#x442; &#x43E;&#x43D; &#x432;&#x44B;&#x433;&#x43B;&#x44F;&#x434;&#x438;&#x442; &#x442;&#x430;&#x43A;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> connect(
+    state =&gt; ({ person: state.person }),
+    dispatch =&gt; ({
+        onPersonChange: (data) =&gt; dispatch({ type: <span class="hljs-string">`<span class="hljs-subst">${Person}</span>.<span class="hljs-subst">${PersonChange}</span>`</span>, data: data }),
+        onPersonClear: () =&gt; dispatch({ type: <span class="hljs-string">`<span class="hljs-subst">${Person}</span>.<span class="hljs-subst">${PersonClear}</span>`</span> })
+    }))(SinglePersonEditApplication)
+</code></pre>
+<p>&#x414;&#x43B;&#x44F; &#x44D;&#x442;&#x43E;&#x433;&#x43E; &#x43F;&#x43E;&#x442;&#x440;&#x435;&#x431;&#x443;&#x435;&#x442;&#x441;&#x44F; &#x43F;&#x435;&#x440;&#x435;&#x43D;&#x435;&#x441;&#x442;&#x438; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44E; dispatch &#x432;&#x43D;&#x443;&#x442;&#x440;&#x44C; &#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x43D;&#x435;&#x43D;&#x442;&#x43E;&#x432;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> React <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>
+
+<span class="hljs-keyword">import</span> { Change, Clear } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;../reducers/personReducer&apos;</span>
+
+export default function PersonEditForm({ person, dispatch }) {
+    var onChange = data =&gt; dispatch({ type: Change, data: data })
+    var onClear = () =&gt; dispatch({ type: Clear })
+
+    return &lt;div&gt; /* ... */ &lt;/div&gt;
+}
+</code></pre>
+<p>&#x422;&#x435;&#x43F;&#x435;&#x440;&#x44C; &#x43F;&#x435;&#x440;&#x435;&#x434;&#x430;&#x434;&#x438;&#x43C; &#x438;&#x437; &#x440;&#x43E;&#x434;&#x438;&#x442;&#x435;&#x43B;&#x44C;&#x441;&#x43A;&#x43E;&#x439; &#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x43D;&#x435;&#x43D;&#x442;&#x44B; &#x432; PersonEditForm &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44E; dispatch, &#x43E;&#x431;&#x435;&#x440;&#x43D;&#x443;&#x432; &#x435;&#x451; &#x442;&#x430;&#x43A;, &#x447;&#x442;&#x43E;&#x431;&#x44B; &#x43E;&#x43D;&#x430; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x43B;&#x44F;&#x43B;&#x430; &#x43A;&#x43E; &#x432;&#x441;&#x435;&#x43C; &#x433;&#x435;&#x43D;&#x435;&#x440;&#x438;&#x440;&#x443;&#x435;&#x43C;&#x44B;&#x43C; action&apos;&#x430;&#x43C; &#x437;&#x430;&#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x439; &#x43F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441;:</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SinglePersonEditApplication</span>(<span class="hljs-params">{ person, dispatch }</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">PersonEditForm</span> 
+                <span class="hljs-attribute">person</span>=<span class="hljs-value">{person}</span>
+                <span class="hljs-attribute">dispatch</span>=<span class="hljs-value">{forwardTo(dispatch,</span> <span class="hljs-attribute">Person</span>)}
+                 /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+}
+
+export default connect(
+    state =&gt; ({ person: state.person })
+    )(SinglePersonEditApplication)
+</span></code></pre>
+<p>&#x41C;&#x44B; &#x43F;&#x43E;&#x43B;&#x443;&#x447;&#x438;&#x43B;&#x438; &#x432; &#x442;&#x43E;&#x447;&#x43D;&#x43E;&#x441;&#x442;&#x438; &#x442;&#x43E; &#x436;&#x435; &#x43F;&#x43E;&#x432;&#x435;&#x434;&#x435;&#x43D;&#x438;&#x435; &#x438; &#x442;&#x443; &#x436;&#x435; &#x441;&#x442;&#x435;&#x43F;&#x435;&#x43D;&#x44C; &#x438;&#x437;&#x43E;&#x43B;&#x44F;&#x446;&#x438;&#x438; &#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x43D;&#x435;&#x43D;&#x442; &#x43D;&#x43E; &#x441; &#x43C;&#x435;&#x43D;&#x44C;&#x448;&#x438;&#x43C; boilerplate &#x43A;&#x43E;&#x434;&#x43E;&#x43C;.</p>
+<h4 id="&#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F;-&#x441;-&#x441;&#x430;&#x439;&#x434;-&#x44D;&#x444;&#x444;&#x435;&#x43A;&#x442;&#x430;&#x43C;&#x438;-&#x432;-&#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x435;-reelm">&#x41A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F; &#x441; &#x441;&#x430;&#x439;&#x434; &#x44D;&#x444;&#x444;&#x435;&#x43A;&#x442;&#x430;&#x43C;&#x438; &#x432; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x435; Reelm</h4>
+<p>&#x422;&#x435;&#x43F;&#x435;&#x440;&#x44C; &#x43F;&#x43E;&#x441;&#x43C;&#x43E;&#x442;&#x440;&#x438;&#x43C; &#x43A;&#x430;&#x43A; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A; Reelm &#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x435;&#x442; &#x441; &#x43F;&#x43E;&#x431;&#x43E;&#x447;&#x43D;&#x44B;&#x43C;&#x438; &#x44D;&#x444;&#x444;&#x435;&#x43A;&#x442;&#x430;&#x43C;&#x438;. &#x420;&#x435;&#x43A;&#x432;&#x435;&#x441;&#x442;&#x438;&#x440;&#x443;&#x435;&#x43C; &#x442;&#x430;&#x43A;&#x443;&#x44E; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x43E;&#x43D;&#x430;&#x43B;&#x44C;&#x43D;&#x43E;&#x441;&#x442;&#x438;: &#x43D;&#x435;&#x43E;&#x431;&#x445;&#x43E;&#x434;&#x438;&#x43C;&#x43E; &#x43F;&#x435;&#x440;&#x435;&#x434; &#x43E;&#x447;&#x438;&#x441;&#x442;&#x43A;&#x43E;&#x439; &#x434;&#x430;&#x43D;&#x43D;&#x44B;&#x445; &#x432; &#x444;&#x43E;&#x440;&#x43C;&#x435; &#x43E;&#x442;&#x43E;&#x431;&#x440;&#x430;&#x437;&#x438;&#x442;&#x44C; &#x43E;&#x43A;&#x43D;&#x43E; &#x441; &#x43F;&#x43E;&#x434;&#x442;&#x432;&#x435;&#x440;&#x436;&#x434;&#x435;&#x43D;&#x438;&#x435;&#x43C;. &#x41D;&#x43E; &#x441; &#x43D;&#x435;&#x441;&#x43A;&#x43E;&#x43B;&#x44C;&#x43A;&#x438;&#x43C; &#x443;&#x441;&#x43B;&#x43E;&#x432;&#x438;&#x44F;&#x43C;&#x438;: &#x43C;&#x44B; &#x43D;&#x435; &#x445;&#x43E;&#x434;&#x438;&#x43C; &#x43E;&#x43A;&#x43D;&#x43E; &#x434;&#x435;&#x440;&#x436;&#x430;&#x442;&#x44C; &#x432;&#x43D;&#x443;&#x442;&#x440;&#x438; &#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x43D;&#x435;&#x43D;&#x442;&#x44B; &#x444;&#x43E;&#x440;&#x43C;&#x44B;. &#x41A;&#x440;&#x43E;&#x43C;&#x435; &#x442;&#x43E;&#x433;&#x43E; &#x445;&#x43E;&#x447;&#x435;&#x442;&#x441;&#x44F;, &#x447;&#x442;&#x43E;&#x431;&#x44B; &#x432; &#x438;&#x442;&#x43E;&#x433;&#x435; &#x43D;&#x430;&#x448; &#x43A;&#x43E;&#x434; &#x432;&#x44B;&#x433;&#x43B;&#x44F;&#x434;&#x435;&#x43B; &#x43A;&#x430;&#x43A;-&#x442;&#x43E; &#x442;&#x430;&#x43A;:</p>
+<pre><code>if ShowConfirmWindow(&apos;Clear person data?&apos;) then
+    ClearData();
+</code></pre><p>&#x414;&#x43B;&#x44F; &#x43D;&#x430;&#x43F;&#x438;&#x441;&#x430;&#x43D;&#x438;&#x44F; &#x442;&#x430;&#x43A;&#x43E;&#x433;&#x43E; &#x440;&#x43E;&#x434;&#x430; &#x43A;&#x43E;&#x434;&#x430; &#x441;&#x443;&#x449;&#x435;&#x441;&#x442;&#x432;&#x443;&#x435;&#x442; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x430; <a href="https://github.com/yelouafi/redux-saga" target="_blank">redux-saga</a>. Reelm &#x438;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x435;&#x442; &#x438;&#x434;&#x435;&#x438; &#x438;&#x437; &#x44D;&#x442;&#x43E;&#x439; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A;&#x438;, &#x447;&#x442;&#x43E;&#x431;&#x44B; &#x43F;&#x440;&#x435;&#x434;&#x43E;&#x441;&#x442;&#x430;&#x432;&#x438;&#x442;&#x44C; &#x432;&#x43E;&#x437;&#x43C;&#x43E;&#x436;&#x43D;&#x43E;&#x441;&#x442;&#x44C; &#x43F;&#x438;&#x441;&#x430;&#x442;&#x44C; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E;&#x439; &#x43F;&#x43E;&#x43D;&#x44F;&#x442;&#x43D;&#x44B;&#x439; &#x43A;&#x43E;&#x434;.</p>
+<p>&#x418;&#x441;&#x43F;&#x43E;&#x43B;&#x44C;&#x437;&#x443;&#x44F; &#x441;&#x430;&#x433;&#x443;, &#x43C;&#x44B; &#x43C;&#x43E;&#x433;&#x43B;&#x438; &#x431;&#x44B; &#x43D;&#x430;&#x43F;&#x438;&#x441;&#x430;&#x442;&#x44C; &#x447;&#x442;&#x43E;-&#x442;&#x43E; &#x432;&#x440;&#x43E;&#x434;&#x435;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">while</span>(<span class="hljs-literal">true</span>) {
+    <span class="hljs-keyword">yield</span> take(<span class="hljs-string">&apos;Person.ConfirmedClear&apos;</span>);
+    <span class="hljs-keyword">var</span> result = <span class="hljs-keyword">yield</span> call(ShowConfirmation, <span class="hljs-string">&apos;Clear person data?&apos;</span>);
+    <span class="hljs-keyword">if</span> (result)
+        <span class="hljs-keyword">yield</span> put({ type: <span class="hljs-string">&apos;Person.Clear&apos;</span> })
+}
+</code></pre>
+<p>&#x41D;&#x43E;! &#x41D;&#x430; &#x43F;&#x440;&#x430;&#x43A;&#x442;&#x438;&#x43A;&#x435; &#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x44F; &#x442;&#x430;&#x43A;&#x43E;&#x433;&#x43E; &#x43A;&#x43E;&#x434;&#x430; &#x437;&#x430;&#x442;&#x440;&#x443;&#x434;&#x43D;&#x435;&#x43D;&#x430; &#x43F;&#x43E; &#x43D;&#x435;&#x441;&#x43A;&#x43E;&#x43B;&#x44C;&#x43A;&#x438;&#x43C; &#x43F;&#x440;&#x438;&#x447;&#x438;&#x43D;&#x430;&#x43C;:</p>
+<ol>
+<li>&#x422;&#x430;&#x43A;&#x430;&#x44F; &#x441;&#x430;&#x433;&#x430; &#x434;&#x43E;&#x43B;&#x436;&#x43D;&#x430; &#x431;&#x44B;&#x442;&#x44C; &#x437;&#x430;&#x440;&#x435;&#x433;&#x438;&#x441;&#x442;&#x440;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x430; &#x432; &#x43A;&#x43E;&#x440;&#x43D;&#x435; &#x43F;&#x440;&#x438;&#x43B;&#x43E;&#x436;&#x435;&#x43D;&#x438;&#x44F;.</li>
+<li>&#x417;&#x430;&#x442;&#x440;&#x443;&#x434;&#x43D;&#x438;&#x442;&#x435;&#x43B;&#x44C;&#x43D;&#x43E; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x43B;&#x44F;&#x442;&#x44C; &#x43F;&#x440;&#x435;&#x444;&#x438;&#x43A;&#x441;&#x44B; &#x43A; action&apos;&#x430;&#x43C; &#x432; &#x441;&#x430;&#x433;&#x435;.</li>
+<li>ShowConfirmation -- &#x442;&#x43E;&#x436;&#x435; &#x441;&#x430;&#x433;&#x430;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x430;&#x44F; &#x443;&#x43F;&#x440;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x442; &#x437;&#x430;&#x43F;&#x443;&#x441;&#x43A;&#x43E;&#x43C; &#x43C;&#x43E;&#x434;&#x430;&#x43B;&#x44C;&#x43D;&#x43E;&#x433;&#x43E; &#x434;&#x438;&#x430;&#x43B;&#x43E;&#x433;&#x430; &#x438; &#x43F;&#x440;&#x438;&#x432;&#x44F;&#x437;&#x430;&#x43D;&#x430; &#x43A; &#x43A;&#x43E;&#x434;&#x443; &#x441;&#x442;&#x430;&#x442;&#x438;&#x447;&#x435;&#x441;&#x43A;&#x438;.</li>
+</ol>
+<p>&#x412;&#x441;&#x435; &#x44D;&#x442;&#x438; &#x43F;&#x440;&#x43E;&#x431;&#x43B;&#x435;&#x43C;&#x44B; &#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x440;&#x435;&#x448;&#x438;&#x442;&#x44C;, &#x43D;&#x43E; &#x43A;&#x43E;&#x434; &#x441;&#x442;&#x430;&#x43D;&#x43E;&#x432;&#x438;&#x442;&#x441;&#x44F; &#x43C;&#x43D;&#x43E;&#x433;&#x43E;&#x441;&#x43B;&#x43E;&#x432;&#x43D;&#x44B;&#x43C;, &#x430; &#x442;&#x430;&#x43A;&#x436;&#x435; &#x43A; &#x43A;&#x43E;&#x434;&#x443; &#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x438; (view &#x438; &#x440;&#x435;&#x434;&#x44C;&#x44E;&#x441;&#x435;&#x440;&#x43E;&#x432;) &#x434;&#x43E;&#x431;&#x430;&#x432;&#x43B;&#x44F;&#x435;&#x442;&#x441;&#x44F; &#x435;&#x449;&#x451; &#x43A;&#x43E;&#x434; &#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x438; &#x441;&#x430;&#x433;.</p>
+<p>Reelm &#x440;&#x435;&#x448;&#x430;&#x435;&#x442; &#x44D;&#x442;&#x443; &#x43F;&#x440;&#x43E;&#x431;&#x43B;&#x435;&#x43C;&#x443;, &#x43F;&#x43E;&#x437;&#x432;&#x43E;&#x43B;&#x44F;&#x44F; &#x43E;&#x431;&#x44A;&#x435;&#x434;&#x438;&#x43D;&#x438;&#x442;&#x44C; &#x43A;&#x43E;&#x434; &#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x438; &#x441;&#x430;&#x433; &#x438; reducer&apos;&#x43E;&#x432;. &#x422;&#x435;&#x43F;&#x435;&#x440;&#x44C; reducer &#x43C;&#x43E;&#x436;&#x435;&#x442; &#x432;&#x43E;&#x437;&#x432;&#x440;&#x430;&#x449;&#x430;&#x442;&#x44C; &#x43D;&#x435; &#x442;&#x43E;&#x43B;&#x44C;&#x43A;&#x43E; &#x441;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x435;, &#x43D;&#x43E; &#x438; &#x44D;&#x444;&#x444;&#x435;&#x43A;&#x442;&#x44B;. &#x41C;&#x44B; &#x43D;&#x435;&#x43C;&#x43D;&#x43E;&#x433;&#x43E; &#x438;&#x441;&#x43F;&#x43E;&#x440;&#x442;&#x438;&#x43B;&#x438; &#x432;&#x43E;&#x437;&#x432;&#x440;&#x430;&#x449;&#x430;&#x435;&#x43C;&#x43E;&#x435; &#x441;&#x43E;&#x441;&#x442;&#x43E;&#x44F;&#x43D;&#x438;&#x435; &#x441;&#x430;&#x433;&#x43E;&#x439;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x443;&#x44E; &#x43A; &#x43D;&#x435;&#x43C;&#x443; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x43B;&#x438;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineReducer(initialState)
+    .on(Change, (person, { data }) =&gt; ({ ...person, ...data }))
+    .on(Clear, () =&gt; initialState)
+    .on(ConfirmedClear, 
+        state =&gt; spoiled(state, <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// yield effects</span>
+        }))
+</code></pre>
+<p>&#x41A;&#x43E;&#x434;, &#x432; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x43C; &#x43F;&#x440;&#x43E;&#x438;&#x441;&#x445;&#x43E;&#x434;&#x438;&#x442; <code>yield effects</code> &#x432;&#x43E;&#x437;&#x432;&#x440;&#x430;&#x449;&#x430;&#x44E;&#x442;&#x441;&#x44F; &#x442;&#x430;&#x43A;&#x438;&#x435; &#x436;&#x435; &#x44D;&#x444;&#x444;&#x435;&#x43A;&#x442;&#x44B;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x435; &#x43F;&#x440;&#x438;&#x43D;&#x44F;&#x442;&#x44B; &#x432; &#x431;&#x438;&#x431;&#x43B;&#x438;&#x43E;&#x442;&#x435;&#x43A; redux-saga, &#x43E;&#x434;&#x43D;&#x430;&#x43A;&#x43E; &#x435;&#x441;&#x442;&#x44C; &#x43D;&#x435;&#x431;&#x43E;&#x43B;&#x44C;&#x448;&#x43E;&#x435; &#x43E;&#x442;&#x43B;&#x438;&#x447;&#x438;&#x435;. &#x422;&#x430;&#x43A;&#x430;&#x44F; &#x441;&#x430;&#x433;&#x430; &#x432;&#x43E;&#x437;&#x432;&#x440;&#x430;&#x449;&#x430;&#x435;&#x442; &#x44D;&#x444;&#x444;&#x435;&#x43A;&#x442;&#x44B;, &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x44B;&#x435; &#x43C;&#x43E;&#x433;&#x443;&#x442; (&#x438; &#x434;&#x43E;&#x43B;&#x436;&#x43D;&#x44B;) &#x431;&#x44B;&#x442;&#x44C; &#x43F;&#x435;&#x440;&#x435;&#x445;&#x432;&#x430;&#x447;&#x435;&#x43D;&#x44B; &#x432;&#x44B;&#x448;&#x435; &#x43F;&#x43E; &#x446;&#x435;&#x43F;&#x43E;&#x447;&#x43A;&#x435; &#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x438; reducer&apos;&#x43E;&#x432;. &#x420;&#x430;&#x441;&#x441;&#x43C;&#x43E;&#x442;&#x440;&#x438;&#x43C; &#x43A;&#x43E;&#x43D;&#x43A;&#x440;&#x435;&#x442;&#x43D;&#x44B;&#x439; &#x43F;&#x440;&#x438;&#x43C;&#x435;&#x440;, &#x441; &#x43E;&#x43A;&#x43D;&#x43E;&#x43C; &#x43F;&#x43E;&#x434;&#x442;&#x432;&#x435;&#x440;&#x436;&#x434;&#x435;&#x43D;&#x438;&#x44F;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineReducer(initialState)
+    .on(Change, (person, { data }) =&gt; ({ ...person, ...data }))
+    .on(Clear, () =&gt; initialState)
+    .on(ConfirmedClear, 
+        state =&gt; spoiled(state, <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-keyword">var</span> confirmed = <span class="hljs-keyword">yield</span> { type: <span class="hljs-string">&apos;RequestConfirmation&apos;</span>, text: <span class="hljs-string">&apos;Clean person?&apos;</span> };
+            <span class="hljs-keyword">if</span> (confirmed)
+                <span class="hljs-keyword">yield</span> put({ type: Clear });
+        }))
+</code></pre>
+<p>&#x412; &#x434;&#x430;&#x43D;&#x43D;&#x43E;&#x43C; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x435; &#x43C;&#x44B; &#x432;&#x435;&#x440;&#x43D;&#x443;&#x43B;&#x438; &#x438;&#x437; &#x441;&#x430;&#x433;&#x438; &#x441;&#x430;&#x439;&#x434; &#x44D;&#x444;&#x444;&#x435;&#x43A;&#x442;.</p>
+<pre><code class="lang-javascript">{ type: <span class="hljs-string">&apos;RequestConfirmation&apos;</span>, text: <span class="hljs-string">&apos;Clean person?&apos;</span> }
+</code></pre>
+<p>&#x42D;&#x442;&#x43E; &#x434;&#x435;&#x439;&#x441;&#x442;&#x432;&#x438;&#x435; &#x43A;&#x43E;&#x442;&#x43E;&#x440;&#x43E;&#x435; &#x43D;&#x435; &#x43C;&#x43E;&#x436;&#x435;&#x442; &#x431;&#x44B;&#x442;&#x44C; &#x43E;&#x431;&#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x43D;&#x43E; &#x432; &#x44D;&#x442;&#x43E;&#x43C; reducer&apos;&#x435;. &#x41F;&#x43E;&#x439;&#x43C;&#x430;&#x435;&#x43C; &#x435;&#x433;&#x43E; &#x432; &#x432;&#x435;&#x440;&#x445;&#x43D;&#x435;&#x439; &#x442;&#x43E;&#x447;&#x43A;&#x438; &#x43A;&#x43E;&#x43C;&#x43F;&#x43E;&#x437;&#x438;&#x446;&#x438;&#x438; reducer&apos;&#x43E;&#x432;: </p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// application reducer</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineReducer({})
+    <span class="hljs-comment">// ...</span>
+    .mapEffects(effect =&gt; {
+        <span class="hljs-keyword">if</span> (effect.type === <span class="hljs-string">&apos;RequestConfirmation&apos;</span>) {
+            <span class="hljs-keyword">return</span> call(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>)</span>{
+                <span class="hljs-keyword">return</span> confirm(effect.text);
+            })
+        }
+        <span class="hljs-keyword">return</span> effect;
+    })
+</code></pre>
+<p>&#x412; &#x434;&#x430;&#x43D;&#x43D;&#x43E;&#x43C; &#x441;&#x43B;&#x443;&#x447;&#x430;&#x435; &#x43C;&#x44B; &#x43F;&#x440;&#x43E;&#x441;&#x442;&#x43E; &#x432;&#x44B;&#x437;&#x432;&#x430;&#x43B;&#x438; &#x441;&#x438;&#x43D;&#x445;&#x440;&#x43E;&#x43D;&#x43D;&#x443;&#x44E; &#x444;&#x443;&#x43D;&#x43A;&#x446;&#x438;&#x44E; &#x431;&#x440;&#x430;&#x443;&#x437;&#x435;&#x440;&#x430; confirm. &#x41E;&#x434;&#x43D;&#x430;&#x43A;&#x43E; &#x43C;&#x43E;&#x436;&#x43D;&#x43E; &#x434;&#x43E;&#x431;&#x430;&#x432;&#x438;&#x442;&#x44C; &#x43C;&#x43E;&#x434;&#x430;&#x43B;&#x44C;&#x43D;&#x43E;&#x435; &#x43E;&#x43A;&#x43D;&#x43E; &#x43F;&#x43E;&#x434;&#x442;&#x432;&#x435;&#x440;&#x436;&#x434;&#x435;&#x43D;&#x438;&#x44F; &#x438; &#x43F;&#x43E;&#x440;&#x430;&#x431;&#x43E;&#x442;&#x430;&#x442;&#x44C; &#x441; &#x43D;&#x438;&#x43C;:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> defineReducer({})
+    .scopedOver(Confirmation, [<span class="hljs-string">&apos;confirmation&apos;</span>], confirmationReducer)
+    .scopedOver(Person, [<span class="hljs-string">&apos;person&apos;</span>], personReducer)
+    .mapEffects(effect =&gt; {
+        <span class="hljs-keyword">if</span> (effect.type === <span class="hljs-string">&apos;RequestConfirmation&apos;</span>) {
+            <span class="hljs-keyword">return</span> call(<span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>)</span>{
+                <span class="hljs-keyword">yield</span> put({ type: <span class="hljs-string">`<span class="hljs-subst">${Confirmation}</span>.<span class="hljs-subst">${Show}</span>`</span>, text: effect.text });
+                <span class="hljs-keyword">var</span> resultAction = <span class="hljs-keyword">yield</span> take(x =&gt; x.type === <span class="hljs-string">`<span class="hljs-subst">${Confirmation}</span>.<span class="hljs-subst">${Confirm}</span>`</span> || x.type === <span class="hljs-string">`<span class="hljs-subst">${Confirmation}</span>.<span class="hljs-subst">${Discard}</span>`</span>);
+                <span class="hljs-keyword">yield</span> put({ type: <span class="hljs-string">`<span class="hljs-subst">${Confirmation}</span>.<span class="hljs-subst">${Hide}</span>`</span> });
+                <span class="hljs-keyword">return</span> resultAction.type === <span class="hljs-string">`<span class="hljs-subst">${Confirmation}</span>.<span class="hljs-subst">${Confirm}</span>`</span>;
+            })
+        }
+        <span class="hljs-keyword">return</span> effect;
+    })
+</code></pre>
+<h2 id="&#x442;&#x435;&#x441;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435;">&#x422;&#x435;&#x441;&#x442;&#x438;&#x440;&#x43E;&#x432;&#x430;&#x43D;&#x438;&#x435;</h2>
+<p>TODO</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Введение"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../api/index.html" class="navigation navigation-next " aria-label="Next page: Справочник API"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"github":{"url":"https://github.com/tihonove/reelm"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"prism":{},"search":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
